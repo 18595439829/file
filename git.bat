@@ -1,2 +1,3 @@
 git commit -m 'add' -a
-git push
+git push 
+test
