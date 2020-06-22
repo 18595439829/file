@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://www.runoob.com/try/try.php?filename=tryhtml5_canvas_tut_img -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     
+    <title>菜鸟教程在线编辑器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./canvas异步绘制两张图_files/bootstrap.min.css"> 
+    <script type="text/javascript" async="" src="./canvas异步绘制两张图_files/analytics.js.下载"></script><script src="./canvas异步绘制两张图_files/hm.js.下载"></script><script src="./canvas异步绘制两张图_files/codemirror.min.js.下载"></script>
+    <link rel="shortcut icon" href="https://static.runoob.com/images/favicon.ico" mce_href="//static.runoob.com/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./canvas异步绘制两张图_files/codemirror.min.css">
+	<script src="./canvas异步绘制两张图_files/htmlmixed.min.js.下载"></script>
+	<script src="./canvas异步绘制两张图_files/css.min.js.下载"></script>
+	<script src="./canvas异步绘制两张图_files/javascript.min.js.下载"></script>
+	<script src="./canvas异步绘制两张图_files/xml.min.js.下载"></script>
+	<script src="./canvas异步绘制两张图_files/closetag.min.js.下载"></script>
+	<script src="./canvas异步绘制两张图_files/closebrackets.min.js.下载"></script> 
+	<!--[if lt IE 9]>
+	<script src="//cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<style>
+body{min-height:300px;padding-top:90px;background: #f6f6f6;}.container{width:98%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.CodeMirror{min-height:300px;;font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;}#textareaCode{min-height:300px}#iframeResult{display: block;overflow: hidden;border:0!important;min-width:100px;width:100%;min-height:300px;background-color:#fff}@media screen and (max-width:768px){#textareaCode{height:300px}.CodeMirror{height:300px;font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;}#iframeResult{height:300px}.form-inline{padding:6px 0 2px 0}}.logo h1{background-image:url(/images/logo-domain-white.png);background-repeat:no-repeat;text-indent:-9999px;width:160px;height:39px;margin-top:10px;display:block}
+</style>
+<nav class="navbar navbar-default navbar-fixed-top" style="background: #96b97d;">
+  <div class="container">
+    <div class="navbar-header logo"><h1 onclick="window.open(&#39;//www.runoob.com&#39;)">RUNOOB.COM</h1>
+    </div>
+  </div>
+</nav>
+<div class="container">
+    <div class="row">
+     
+    <div class="col-sm-6">
+	<div class="panel panel-default"> 
+		<div class="panel-heading">
+			<form class="form-inline"> 
+      <div class="row"> 
+          <div class="col-xs-6">
+               <button type="button" onclick="resetCode()" class="btn btn-default">源代码 <small>(<a class="text-danger" href="https://www.runoob.com/try/try-cdnjs.php?filename=tryhtml5_canvas_tut_img">显示异常</a>)</small>：</button>
+            </div>
+            <div class="col-xs-6 text-right">
+              <button type="button" class="btn btn-success" onclick="submitTryit()" id="submitBTN"><span class="glyphicon glyphicon-send"></span> 点击运行</button>
+          </div>
+      </div>
+			</form>
+		</div>
+		<div class="panel-body">
+			<textarea class="form-control" id="textareaCode" name="textareaCode" style="display: none;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;&nbsp;
+&lt;meta&nbsp;charset="utf-8"&gt;&nbsp;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;&nbsp;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Image to use:&lt;/p&gt;
+&lt;img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277"&gt;&lt;p&gt;Canvas:&lt;/p&gt;
+&lt;canvas id="myCanvas" width="250" height="300" style="border:1px solid #d3d3d3;"&gt;
+您的浏览器不支持 HTML5 canvas 标签。&lt;/canvas&gt;
+
+&lt;script&gt;
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+var img=document.getElementById("scream");
+
+img.onload = function() {
+	ctx.drawImage(img,10,10);
+} 
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea><div class="CodeMirror cm-s-default" style="width: 100%; height: 481.44px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 394px; left: 50.2031px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 17px;"><div style="min-width: 1px; height: 768px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="display: block; right: 17px; left: 0px;"><div style="height: 100%; min-height: 1px; width: 762px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true" style="display: block; height: 17px; width: 17px;"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -17px; border-right-width: 13px; min-height: 768px; min-width: 761.531px; padding-right: 17px; padding-bottom: 17px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 50.2031px; top: 660px; height: 20px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span>&nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">meta</span>&nbsp;<span class="cm-attribute">charset</span>=<span class="cm-string">"utf-8"</span><span class="cm-tag cm-bracket">&gt;</span>&nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>菜鸟教程(runoob.com)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>&nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Image to use:<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">img</span> <span class="cm-attribute">id</span>=<span class="cm-string">"scream"</span> <span class="cm-attribute">src</span>=<span class="cm-string">"img_the_scream.jpg"</span> <span class="cm-attribute">alt</span>=<span class="cm-string">"The Scream"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"220"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"277"</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Canvas:<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">canvas</span> <span class="cm-attribute">id</span>=<span class="cm-string">"myCanvas"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"250"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"300"</span> <span class="cm-attribute">style</span>=<span class="cm-string">"border:1px solid #d3d3d3;"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">您的浏览器不支持 HTML5 canvas 标签。<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">canvas</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-def">c</span><span class="cm-operator">=</span><span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">"myCanvas"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-def">ctx</span><span class="cm-operator">=</span><span class="cm-variable">c</span>.<span class="cm-property">getContext</span>(<span class="cm-string">"2d"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-def">img</span><span class="cm-operator">=</span><span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">"scream"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">img</span>.<span class="cm-property">onload</span> <span class="cm-operator">=</span> () <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">return</span> <span class="cm-keyword">new</span> <span class="cm-variable">Promise</span>((<span class="cm-def">resolve</span>) <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable-2">resolve</span>(<span class="cm-variable">img</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>})</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">} </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" class="cm-tab-wrap-hack" style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-def">img1</span><span class="cm-operator">=</span><span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">"scream"</span>);<span class="cm-tab" role="presentation" cm-text="	"> </span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">img1</span>.<span class="cm-property">onload</span> <span class="cm-operator">=</span> () <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">return</span> <span class="cm-keyword">new</span> <span class="cm-variable">Promise</span>((<span class="cm-def">resolve</span>) <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable-2">resolve</span>(<span class="cm-variable">img1</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>})</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">} </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">Promise</span>.<span class="cm-property">all</span>([<span class="cm-variable">img</span>.<span class="cm-property">onload</span>(),<span class="cm-variable">img1</span>.<span class="cm-property">onload</span>()]).<span class="cm-property">then</span>(([<span class="cm-def">img</span>,<span class="cm-def">img1</span>]) <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">ctx</span>.<span class="cm-property">drawImage</span>(<span class="cm-variable-2">img1</span>,<span class="cm-number">10</span>,<span class="cm-number">10</span>,<span class="cm-number">150</span>,<span class="cm-number">150</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">ctx</span>.<span class="cm-property">drawImage</span>(<span class="cm-variable-2">img</span>,<span class="cm-number">100</span>,<span class="cm-number">150</span>,<span class="cm-number">150</span>,<span class="cm-number">150</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>})</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 17px solid transparent; top: 768px;"></div><div class="CodeMirror-gutters" style="display: none; height: 798px;"></div></div></div>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-sm-6">
+	<div class="panel panel-default"> 
+		<div class="panel-heading"><form class="form-inline"> <button type="button" class="btn btn-default">运行结果</button></form></div>
+		<div class="panel-body"><div id="iframewrapper"><iframe frameborder="0" id="iframeResult" style="height: 481.44px;" src="./canvas异步绘制两张图_files/saved_resource.html"></iframe></div></div>
+	</div>
+	</div>
+	
+	</div>
+
+	<footer>
+		<div class="row">
+			<div class="col-sm-12">
+      <div style="text-align: center;">
+   
+     <a data-tt="1194610" href="https://datayi.cn/w/rREq6LpR" target="_blank"><img style="max-width:100%; height: auto;" src="./canvas异步绘制两张图_files/try-2070.png"></a>        <hr>
+
+				<p>Copyright © 2013-2020<a target="_blank" href="https://www.runoob.com/">菜鸟教程</a></p>
+         </div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script>
+var mixedMode = {
+name: "htmlmixed",
+scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
+               mode: null},
+              {matches: /(text|application)\/(x-)?vb(a|script)/i,
+               mode: "vbscript"}]
+};
+var editor = CodeMirror.fromTextArea(document.getElementById("textareaCode"), {
+	mode: mixedMode,
+	selectionPointer: true,
+	lineNumbers: false,
+	matchBrackets: true,
+	indentUnit: 4,
+	indentWithTabs: true
+});
+
+window.addEventListener("resize", autodivheight);
+
+var x = 0;
+function autodivheight(){
+    var winHeight=0;
+    if (window.innerHeight) {
+        winHeight = window.innerHeight;
+    } else if ((document.body) && (document.body.clientHeight)) {
+        winHeight = document.body.clientHeight;
+    }
+    //通过深入Document内部对body进行检测，获取浏览器窗口高度
+    if (document.documentElement && document.documentElement.clientHeight) {
+        winHeight = document.documentElement.clientHeight;
+    }
+    height = winHeight*0.68
+    editor.setSize('100%', height);
+    document.getElementById("iframeResult").style.height= height +"px";
+}
+function resetCode() {
+  var initCode = "<!DOCTYPE html>\n<html>\n<head>\u00a0\n<meta\u00a0charset=\"utf-8\">\u00a0\n<title>\u83dc\u9e1f\u6559\u7a0b(runoob.com)<\/title>\u00a0\n<\/head>\n<body>\n\n<p>Image to use:<\/p>\n<img id=\"scream\" src=\"img_the_scream.jpg\" alt=\"The Scream\" width=\"220\" height=\"277\"><p>Canvas:<\/p>\n<canvas id=\"myCanvas\" width=\"250\" height=\"300\" style=\"border:1px solid #d3d3d3;\">\n\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301 HTML5 canvas \u6807\u7b7e\u3002<\/canvas>\n\n<script>\n\nvar c=document.getElementById(\"myCanvas\");\nvar ctx=c.getContext(\"2d\");\nvar img=document.getElementById(\"scream\");\n\nimg.onload = function() {\n\tctx.drawImage(img,10,10);\n} \n<\/script>\n\n<\/body>\n<\/html>"  
+  editor.getDoc().setValue(initCode);
+  submitTryit();
+}
+function submitTryit() {
+  var text = editor.getValue();
+  var patternHtml = /<html[^>]*>((.|[\n\r])*)<\/html>/im
+  var patternHead = /<head[^>]*>((.|[\n\r])*)<\/head>/im
+  var array_matches_head = patternHead.exec(text);
+  var patternBody = /<body[^>]*>((.|[\n\r])*)<\/body>/im;
+  
+  var array_matches_body = patternBody.exec(text);
+  var basepath_flag = 1;
+  var basepath = '';
+  if(basepath_flag) {
+    basepath = '<base href="//www.runoob.com/try/demo_source/" target="_blank">';
+  }
+  if(array_matches_head) {
+    text = text.replace('<head>', '<head>' + basepath );
+  } else if (patternHtml) {
+    text = text.replace('<html>', '<head>' + basepath + '</head>');
+  } else if (array_matches_body) {
+    text = text.replace('<body>', '<body>' + basepath );
+  } else {
+    text = basepath + text;
+  }
+  var ifr = document.createElement("iframe");
+  ifr.setAttribute("frameborder", "0");
+  ifr.setAttribute("id", "iframeResult");  
+  document.getElementById("iframewrapper").innerHTML = "";
+  document.getElementById("iframewrapper").appendChild(ifr);
+ 
+  var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
+  ifrw.document.open();
+  ifrw.document.write(text);  
+  ifrw.document.close();
+  autodivheight();
+}
+submitTryit();
+autodivheight();
+</script>
+<div style="display:none;">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3eec0b7da6548cf07db3bc477ea905ee";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script async="" src="./canvas异步绘制两张图_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84264393-2');
+</script>
+
+</div>
+</body></html>
